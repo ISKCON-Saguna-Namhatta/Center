@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to  Saguna Namhatta (ISKCON), your spiritual home dedicated to spreading Lord Krishna's teachings and community service in West Bengal.">
+    <meta name="keywords" content=" Saguna Namhatta (ISKCON), Lord Krishna, Bhagavad Gita, Spiritual Counseling, Devotional Services, Community Service, Kirtan">
+    <meta name="author" content=" Saguna Namhatta (ISKCON)Team">
+    <meta property="og:title" content=" Saguna Namhatta (ISKCON) - Welcome">
+    <meta property="og:description" content="Your spiritual home dedicated to spreading Lord Krishna's teachings and enriching lives through devotion.">
+    <meta property="og:image" content="images/hero_image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content=" Saguna Namhatta (ISKCON) - Welcome">
+    <meta name="twitter:description" content="Your spiritual home dedicated to spreading Lord Krishna's teachings.">
+    <meta name="twitter:image" content="images/hero_image.jpg">
+    <meta name="robots" content="index, follow">
+    <title>ISKCON Raghunathpur - Welcome</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- External CSS Files  -->
+    <link rel="stylesheet" href="css/donation-history.css"
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/Base.css">
+    <link rel="stylesheet" href="css/Layout.css">
+    <link rel="stylesheet" href="css/logonavbar.css"
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/Tailwind.css">
+    <link rel="stylesheet" href="css/typography.css">
+
+</head>
+
+<body>
+
+</style>
+ <!-- Header -->
+  <header>
+   <center><h1 class="bounce";>Welcome Admin's</h1></center> 
+   </header>
+   <!--- Navigationa Pannel with Logo -->
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="logo-container">
+          <picture>
+            <source srcset="images/Logo.png" type="image/png"> 
+            <img src="images/Logo.png" 
+                 class="logo" 
+                 alt="ISKCON Raghunathpur Logo"
+                 width="120" 
+                 height="48"
+                 loading="lazy">
+          </picture>
+          <span class="logo-title" aria-hidden="true" style="color: #B8860B ;"> SAGUNA NAMHATTA (ISKCON)</span>
+        </div>
+      
+        <button class="menu-toggle" 
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="main-menu">
+          <span class="sr-only">Menu</span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      
+        <ul class="navbar-nav" id="main-menu" role="navigation">
+          <li class="nav-item" role="none">
+            <a href="index.html" 
+               class="nav-link" 
+               role="menuitem"
+               aria-current="page">
+               <i class="fas fa-home" aria-hidden="true"></i>
+               Home
+            </a>
+          </li>
+          
+          <li class="nav-item dropdown" role="none">
+            <button class="nav-link"
+                    role="menuitem"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    id="products-menu">
+               <i class="fas fa-om" aria-hidden="true"></i>
+               Activities
+            </button>
+            
+            <ul class="dropdown-menu" 
+                role="menu"
+                aria-labelledby="products-menu">
+              <li class="nav-item" role="none">
+                <a class="nav-link" 
+                   href="about.html"
+                   role="menuitem">
+                   <i class="fas fa-temple" aria-hidden="true"></i>
+                   About Temple
+                </a>
+              </li>
+              <li class="nav-item" role="none">
+                <a class="nav-link" 
+                   href="events.html"
+                   role="menuitem">
+                   <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                   Festivals
+                </a>
+              </li>
+              <li class="nav-item" role="none">
+                <a class="nav-link" 
+                   href="services.html"
+                   role="menuitem">
+                   <i class="fas fa-hands-praying" aria-hidden="true"></i>
+                   Seva Opportunities
+                </a>
+              </li>
+              <li class="nav-item" role="none">
+                <a class="nav-link" 
+                   href="donations.html"
+                   role="menuitem">
+                   <i class="fas fa-hand-holding-heart" aria-hidden="true"></i>
+                   Donate
+                </a>
+              </li>
+              <li class="nav-item" role="none">
+                <a class="nav-link" 
+                   href="live.html"
+                   role="menuitem">
+                   <i class="fas fa-video" aria-hidden="true"></i>
+                   Live Darshan
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- Some External Things of Navbar( Java)-->
+      <!-- Optimized Font Awesome -->
+      <link rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-<HASH>"
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer">
+      
+      <!-- Enhanced JavaScript -->
+      <script>
+     document.addEventListener('DOMContentLoaded', () => {
+  const navbar = document.querySelector('.navbar');
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.navbar-nav');
+  const dropdowns = document.querySelectorAll('.dropdown');
+
+  // Track if menu is open
+  let isMenuOpen = false;
+
+  // Mobile menu toggle
+  const toggleMenu = (forceClose) => {
+    isMenuOpen = forceClose ? false : !isMenuOpen;
+    
+    toggle.setAttribute('aria-expanded', isMenuOpen);
+    menu.classList.toggle('active', isMenuOpen);
+    toggle.classList.toggle('active', isMenuOpen);
+    navbar.classList.toggle('menu-open', isMenuOpen);
+    
+    // Prevent scrolling when menu is open
+    document.body.style.overflow = isMenuOpen ? 'hidden' : '';
+  };
+
+  // STRICT toggle button handler
+  toggle.addEventListener('click', (e) => {
+    // Only respond to clicks directly on the toggle button
+    if (e.target === toggle || toggle.contains(e.target)) {
+      e.preventDefault();
+      e.stopPropagation();
+      toggleMenu();
+    }
+  });
+
+  // Enhanced dropdown handling (unchanged from previous)
+  const handleDropdown = (dropdown, open) => {
+    const trigger = dropdown.querySelector('[aria-haspopup]');
+    dropdown.classList.toggle('active', open);
+    trigger.setAttribute('aria-expanded', open);
+  };
+
+  dropdowns.forEach(dropdown => {
+    const trigger = dropdown.querySelector('[aria-haspopup]');
+    
+    trigger.addEventListener('click', (e) => {
+      if (window.innerWidth < 1025) {
+        e.preventDefault();
+        e.stopPropagation();
+        handleDropdown(dropdown, !dropdown.classList.contains('active'));
+      }
+    });
+
+    // Desktop hover events...
+  });
+
+  // Close only when clicking outside navbar AND menu is open
+  document.addEventListener('click', (e) => {
+    if (isMenuOpen && !navbar.contains(e.target)) {
+      closeAll();
+    }
+  });
+
+  // Close on ESC key
+  document.addEventListener('keydown', (e) => e.key === 'Escape' && closeAll());
+  
+  // Responsive close handling
+  const closeAll = () => {
+    if (isMenuOpen) toggleMenu(false);
+    dropdowns.forEach(d => handleDropdown(d, false));
+  };
+
+  // Window resize handler
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 1025 && isMenuOpen) {
+      closeAll();
+    }
+  });
+});
+      </script>
+<style>
+
+        /* Main Content */
+        .main-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .section-container {
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+
+        p.subtitle {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Search Bar */
+        .search-container {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .search-bar {
+            flex: 1;
+            position: relative;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 0.8rem 1rem 0.8rem 2.5rem;
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .search-bar input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(255, 107, 0, 0.2);
+        }
+
+        .search-bar i {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #777;
+        }
+
+        /* Table Styles */
+        .table-responsive {
+            overflow-x: auto;
+            margin-top: 1.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background-color: var(--dark-color);
+            color: white;
+            font-weight: 500;
+            position: sticky;
+            top: 0;
+        }
+
+        tr:hover {
+            background-color: rgba(255, 107, 0, 0.05);
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 0.3rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .status-active {
+            background-color: rgba(76, 175, 80, 0.2);
+            color: var(--success-color);
+        }
+
+        .status-completed {
+            background-color: rgba(244, 67, 54, 0.2);
+            color: var(--danger-color);
+        }
+
+        .status-cancelled {
+            background-color: rgba(255, 193, 7, 0.2);
+            color: var(--warning-color);
+        }
+
+        .event-image {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+    
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+        
+
+            .main-container {
+                padding: 0 1rem;
+            }
+
+            .section-container {
+                padding: 1.5rem;
+            }
+
+            .search-container {
+                flex-direction: column;
+            }
+
+            th, td {
+                padding: 0.8rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        /* Utility Classes */
+        .hidden {
+            display: none !important;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mt-2 {
+            margin-top: 2rem;
+        }
+
+        .mb-2 {
+            margin-bottom: 2rem;
+        }
+        
+        .event-description {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 0.3rem;
+        }
+    </style>
+
+    
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Manage Events Section -->
+        <section id="manage-events-section" class="fade-in">
+            <div class="section-container">
+                <h2>Upcoming Events</h2>
+                <p class="subtitle">View all upcoming events at Saguna Namhatta</p>
+
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="search-event" onkeyup="filterEvents()" 
+                               placeholder="Search by event name, location, or category">
+                    </div>
+                </div>
+
+                <!-- Events List -->
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Event</th>
+                                <th>Date</th>
+                                <th>Location</th>
+                                <th>Category</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="events-list-body">
+                            <!-- Dynamically added events will appear here -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="no-events-message" class="text-center mt-2 hidden">
+                    <p>No events found.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+   
+    <script>
+        // Sample initial data
+        let eventData = [
+            {
+                id: 1,
+                name: "Rath Yatra Festival",
+                date: "2025-06-27T10:00",
+                location: "2 no Lichutala ,Saguna ,Kalyani,Nadia,West Bengali",
+                category: "Festival",
+                description: "Annual chariot festival of Lord Jagannath",
+                status: "Active",
+                image: "https://www.iskconbangalore.org/wp-content/uploads/2016/07/rath-yatra-bangalore.jpg"
+            },
+    
+        ];
+
+        // DOM Elements
+        const eventsListBody = document.getElementById('events-list-body');
+        const noEventsMessage = document.getElementById('no-events-message');
+
+        // Initialize the app
+        document.addEventListener('DOMContentLoaded', function() {
+            updateEventList();
+        });
+
+        // Function to handle logout
+        function logout() {
+            if (confirm("Are you sure you want to log out?")) {
+                alert("Logged out successfully!");
+            }
+        }
+
+        // Filter events
+        let debounceTimer;
+        function filterEvents() {
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(() => {
+                const searchValue = document.getElementById('search-event').value.toLowerCase();
+                const filteredEvents = eventData.filter(event => 
+                    event.name.toLowerCase().includes(searchValue) ||
+                    event.location.toLowerCase().includes(searchValue) ||
+                    event.category.toLowerCase().includes(searchValue)
+                );
+                updateEventList(filteredEvents);
+            }, 300);
+        }
+
+        // Update event list in UI
+        function updateEventList(events = eventData) {
+            eventsListBody.innerHTML = '';
+            
+            if (events.length === 0) {
+                noEventsMessage.classList.remove('hidden');
+                return;
+            }
+            
+            noEventsMessage.classList.add('hidden');
+            
+            events.forEach(event => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>
+                        <strong>${event.name}</strong>
+                        ${event.description ? `<p class="event-description">${event.description}</p>` : ''}
+                    </td>
+                    <td>${formatDateTime(event.date)}</td>
+                    <td>${event.location}</td>
+                    <td>${event.category}</td>
+                    <td>
+                        <span class="status-badge ${getStatusClass(event.status)}">
+                            ${event.status}
+                        </span>
+                    </td>
+                `;
+                eventsListBody.appendChild(row);
+            });
+        }
+
+        // Helper functions
+        function formatDateTime(dateTimeString) {
+            const options = { 
+                year: 'numeric', 
+                month: 'short', 
+                day: 'numeric',
+                hour: '2-digit', 
+                minute: '2-digit'
+            };
+            return new Date(dateTimeString).toLocaleDateString('en-US', options);
+        }
+
+        function getStatusClass(status) {
+            switch(status) {
+                case 'Active': return 'status-active';
+                case 'Completed': return 'status-completed';
+                case 'Cancelled': return 'status-cancelled';
+                default: return '';
+            }
+        }
+    </script>
+    <!-- Footer of page -->
+<footer class="iskcon-footer">
+    <div class="footer-container">
+        <!-- Grid Layout -->
+        <div class="footer-grid">
+            <!-- Spiritual Resources -->
+            <div class="footer-section">
+              <h4 class="slide-in-left text-gold">Spiritual Resources</h4>
+                <div class="slide-in-left">
+                  <ul class="footer-link"
+                    <li><a href="https://vedabase.io/en/library/bg/" class="footer-link">Bhagavad Gita</a></li>
+                    <li><a href="https://lakshminarayanlenasia.com/articles/ShriKrishnaPrayers.pdf" class="footer-link">Daily Prayers</a></li>
+                    <li><a href="https://iskcondesiretree.com/profiles/blogs/hare-krishna-calendar-2025" class="footer-link">Festival Calendar</a></li>
+                </ul>
+                </div>
+            </div>
+
+            <!-- Temple Info -->
+            <div class="footer-section">
+                <h4 class="slide-in-left">Temple Services</h4>
+                <div class="slide-in-left">
+                    <ul class="footer-link"
+                    <li><a href="donations.html" class="footer-link">Donate</a></li>
+                    <li><a href="contact.html" class="footer-link">Volunteer</a></li>
+                    <li><a href="contact.html" class="footer-link">Contact </a></li>
+
+                </ul>
+                </div>
+            </div>
+            
+            <!-- Social Media -->
+            <div class="slide-in-left">
+                <h4 class="slide-in-left">Connect With Us</h4>
+                <div class="slide-in-left">
+                  <div class=" footer-link">
+                    <a href="https://www.facebook.com/share/1Af5zKtLe9/" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="404.html" class="social-link" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="404.html" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+         </div>
+         
+
+        <!-- Copyright & Sacred Symbol -->
+        <div class="bounce">
+          <img src="images/Symbol.png" alt="ISKCON Raghunathpur symbol" class="symbol">
+          <style>
+          img {
+            border-radius: 15px; /* Adjust for more/less rounding */
+            overflow: hidden; /* Ensures no sharp edges */
+            display: block; /* Removes unwanted spacing */
+        }
+        </style>
+         <span style="font-size: 12px; color: #FFFDD0;">&copy; 2025 Saguna Hare Krishna Namhatta (ISKCON). All Glories to Srila Prabhupada. | <a href="privacy-policy.html style" style="font-size: 12px; color: #FFFDD0;" >Privacy Policy</a> | <a href="terms-of-service.html" style="font-size: 12px; color: #FFFDD0;" >Terms of Service</a> | <a href="faq.html" style="font-size: 12px; color: #FFFDD0;">FAQs </a></span>
+        </div>
+    </div>
+</footer>
+
+    <!-- Back to Top Button -->
+    <button onclick="topFunction()" id="backToTop" title="Go to top">&#8593;</button>
+
+    <!-- JavaScript Files -->
+    <script src="js/animations.js"></script>
+    <script src="js/for-validation.js"></script>
+    <script src="js/logo.js"></script>
+    <script src="js/navbar.js"></script>
+
+    <script>
+        const backToTop = document.getElementById("backToTop");
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTop.style.display = "block";
+            } else {
+                backToTop.style.display = "none";
+            }
+        };
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <style>
+        #backToTop {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 50%;
+        }
+        #backToTop:hover {
+            background-color: #555;
+        }
+        .cta-button:hover {
+            background-color: #0066cc;
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
+        }
+        .carousel-indicators {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .indicator {
+            width: 12px;
+            height: 12px;
+            margin: 0 5px;
+            border-radius: 50%;
+            background-color: #bbb;
+            cursor: pointer;
+        }
+        .indicator.active {
+            background-color: #0066cc;
+        }
+    </style>
+
+</body>
+
+</html>
